@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dotnet60-basic-gfm1
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/redhat-appstudio-qe/rs-demos-wixp-tenant/image-repository-cr-dotnet-component/devfile-sample-dotnet60-basic-gfm1@sha256:5c2983197f6007204ea9704b9676c702f4582bb108b8c2a502378a2f59166327
+        name: main
+        resources: {}
+status: {}
